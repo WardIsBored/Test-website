@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+:root {
+    --primary-color: #c94ae2;
+    --secondary-color: #e350d7;
+    --background-color: #5d1cb3;
+    --text-color: #ffffff;
+    --font-family: 'Poppins', Arial;
+}
+
+html, body {
+  overflow: hidden;
+}
+
+body {
+    background-image: url(img.jpg);
+}
+
+a {
+    font-family: var(--font-family);
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+
+p {
+    filter: drop-shadow(0 0 20px var(--text-color));
+}
+
+
+.wrapper {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    justify-content: top;
+    height: 100vh;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-family);
+    color: var(--text-color);
+    vertical-align: top;
+    align-items: center;
+    text-align: center;
+}
+
+.Text-Title {
+    /* border: 5px solid var(--background-color); */
+    /* border-radius: 15px; */
+    border-radius: 0%;
+    font-weight: 300px;
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: 0%;
+    padding-top: 0px;
+    margin-bottom: 50px;
+    background: transparent;
+   /*  background-color: rgba(255, 255, 255, .2); */
+    /* backdrop-filter: blur(2px); */
+    width: min(100%, 600px);
+   
+}
+
+.header {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.button {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    border-radius: 10px;
+    border-color: #5d1cb3;
+    border-style: solid;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-width: 5px;
+    border-radius: 15px;
+    transition: background-color 0.3s ease-in-out;
+    padding-left: 15px;
+    padding-right: 25px;
+    width: min(100%, 300px);
+}
+
+.button:hover {
+    background-color: var(--secondary-color);
+}
+
+.button:active {
+    background-color: var(--primary-color);
+}
+.content {
+    margin-top: 5px;
+}
+.text {
+    font-size: 25px;
+    font-weight: 300px;
+    margin: 0;
+    padding: 0%;
+    color: var(--text-color);
+}
+
+.navbar ul{
+    list-style: none;
+    background-color: var(--background-color);
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: var(--text-color);
+    text-decoration: none;
+    padding-right: 15px;
+    display: block;
+    text-align: center;
+    font-size: large;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar a:hover {
+    color: var(--primary-color);
+}
+
+.navbar li {
+    float: left;
+}
+
+.navbar {
+    vertical-align: top;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background-color);
+    margin-bottom: 25px;
+    height: min(100%, 50px);
+}
+
+::selection {
+  background-color: var(--background-color);
+  color: var(--primary-color);
+}
+
+
+
+
+main {
+    display: grid;
+    grid-template-columns: 100px 100px;
+    grid-template-rows: 100px 100px;
+
+    grid-gap: 200px 200px;
+}
