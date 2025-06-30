@@ -10,9 +10,7 @@
     --font-family: 'Poppins', Arial;
 }
 
-html, body {
-  overflow: hidden;
-}
+
 
 body {
     background-image: url(img.jpg);
